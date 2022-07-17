@@ -3,12 +3,17 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev -H 0.0.0.0",
     "build": "next build",
     "start": "next start",
+    "prettier": "prettier -write .",
     "lint": "next lint"
   },
+  "keywords": [],
+  "author": "Alexander Theofilos Hoffmann",
+  "license": "MIT",
   "dependencies": {
+    "@chakra-ui/icons": "^2.0.4",
     "@chakra-ui/react": "^2.2.4",
     "@emotion/react": "^11.9.3",
     "@emotion/styled": "^11.9.3",
