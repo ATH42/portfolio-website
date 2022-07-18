@@ -31,6 +31,12 @@ jobs:
         with:
           fetch-depth: 0
 
+      - name: Run Prettier
+        id: prettier-run
+        uses: rutajdash/prettier-cli-action@v1.0.0
+        with:
+          config_path: ./prettier.config.js
+
       - name: Lint Code Base
         uses: github/super-linter@v4
         env:
