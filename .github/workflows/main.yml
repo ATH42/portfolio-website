@@ -15,4 +15,4 @@ jobs:
       - name: Prettier
         run: npx prettier --write .
       - name: Lint
-        run: next lint
+        run: npm run lint
