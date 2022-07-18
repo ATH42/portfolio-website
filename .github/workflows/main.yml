@@ -13,6 +13,6 @@ jobs:
       - name: Install packages
         run: npm ci
       - name: Prettier
-        run: prettier --write .
+        run: npx prettier --write .
       - name: Lint
         run: next lint
