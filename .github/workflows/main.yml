@@ -1,4 +1,4 @@
-name: Check the source code
+name: Lint & Prettier
 on:
   push:
     branches: [main, develop]
