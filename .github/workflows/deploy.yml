@@ -11,6 +11,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - run: npm ci
+      - run: npm ci vercel
       - run: npm run build
       - uses: amondnet/vercel-action@v20 #deploy
         with:
