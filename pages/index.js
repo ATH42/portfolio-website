@@ -6,13 +6,13 @@ const Home = () => {
   const me = `/images/solaire.png`
   return (
     <Container>
-      <Box borderRadius="lg" bg={bg} p={2} mb={6} align="center">
+      <Box borderRadius='lg' bg={bg} p={2} mb={6} align='center'>
         Hello, I&apos;m Alexander a junior Frontend Developer based in Leipzig{' '}
       </Box>
 
       <Box display={{ md: 'flex' }}>
         <Box flexGrow={1}>
-          <Heading as="h2" variant="page-title">
+          <Heading as='h2' variant='page-title'>
             Alexander Theofilos Hoffmann
           </Heading>
           <p>
@@ -23,16 +23,16 @@ const Home = () => {
           flexShrink={0}
           mt={{ base: 4, md: 0 }}
           ml={{ md: 6 }}
-          align="center"
+          align='center'
         >
           <Image
-            borderColor="whiteAlpha.800"
+            borderColor='whiteAlpha.800'
             borderWidth={2}
-            alt="dings"
-            borderStyle="solid"
-            maxWidth="100px"
-            display="inline-block"
-            borderRadius="full"
+            alt='dings'
+            borderStyle='solid'
+            maxWidth='100px'
+            display='inline-block'
+            borderRadius='full'
             src={me}
           />
         </Box>

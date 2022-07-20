@@ -18,19 +18,20 @@ padding:10px;
 }`
 
 const Logo = () => {
-  const flask = `/images/Icon43${useColorModeValue('', '')}.png`
+  const flask = `/images/Icon43.png`
 
   return (
-    <Link href="/">
+    <Link href='/'>
       <a>
         <LogoBox>
           <Flex>
-            <Image src={flask} width={20} height={20} alt="logo" />
+            <Image src={flask} width={40} height={40} alt='logo' />
             <Text
               color={useColorModeValue('gray.800', 'whiteAlpha.900')}
-              fontFamily="M PLUS Rounded 1c"
-              fontWeight="bold"
+              fontFamily='M PLUS Rounded 1c'
+              fontWeight='bold'
               ml={3}
+              alignSelf='center'
             >
               Alexander Theofilos Hoffmann
             </Text>
