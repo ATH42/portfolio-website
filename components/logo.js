@@ -1,6 +1,6 @@
 import Link from 'next/link'
-import Image from 'next/image'
-import { Text, useColorModeValue, Flex } from '@chakra-ui/react'
+import { Image } from '@chakra-ui/react'
+import { Text,  useColorModeValue, Flex } from '@chakra-ui/react'
 import styled from '@emotion/styled'
 
 const LogoBox = styled.span`
@@ -18,14 +18,22 @@ padding:10px;
 }`
 
 const Logo = () => {
-  const flask = `/images/Icon43.png`
+  const flask = `/images/solaire.png`
 
   return (
     <Link href='/'>
       <a>
         <LogoBox>
           <Flex>
-            <Image src={flask} width={40} height={40} alt='logo' />
+            <Image
+              w={10}
+              borderColor='whiteAlpha.800'
+              borderWidth={2}
+              alt='dings'
+              borderStyle='solid'
+              borderRadius='full'
+              src={flask}
+            />
             <Text
               color={useColorModeValue('gray.800', 'whiteAlpha.900')}
               fontFamily='M PLUS Rounded 1c'
