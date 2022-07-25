@@ -37,24 +37,24 @@ const Navbar = ({ props }) => {
   //   const { path } = props
   return (
     <Box
-      position="fixed"
-      as="nav"
-      w="100%"
+      position='fixed'
+      as='nav'
+      w='100%'
       bg={useColorModeValue('#ffffff40', '#20202380')}
       style={{ backdropFilte: 'blur(10px' }}
       zIndex={1}
       {...props}
     >
       <Container
-        display="flex"
+        display='flex'
         p={2}
-        maxW="container.md"
-        wrap="wrap"
-        align="center"
-        justify="space-between"
+        maxW='container.md'
+        wrap='wrap'
+        align='center'
+        justify='space-between'
       >
-        <Flex align="center" mr={5}>
-          <Heading as="h1" size="lg" letterSpacing={`tighter`}>
+        <Flex align='center' mr={5}>
+          <Heading as='h1' size='lg' letterSpacing={`tighter`}>
             <Logo />
           </Heading>
         </Flex>
@@ -62,35 +62,35 @@ const Navbar = ({ props }) => {
           direction={{ base: 'column', md: 'row' }}
           display={{ base: 'none', md: 'flex' }}
           width={{ base: 'full, md: auto' }}
-          alignItems="center"
+          alignItems='center'
           flexGrow={1}
           mt={{ base: 4, md: 0 }}
         >
           {/* TODO add paths */}
-          <LinkItem href="/works">About</LinkItem>
-          <LinkItem href="/posts">Posts</LinkItem>
-          <LinkItem href="/about">Works</LinkItem>
+          <LinkItem href='/about'>About</LinkItem>
+          <LinkItem href='/posts'>Posts</LinkItem>
+          <LinkItem href='/works'>Works</LinkItem>
         </Stack>
 
-        <Box flex={1} align="right">
+        <Box flex={1} align='right'>
           <ThemeToggle />
           <Box ml={2} display={{ base: 'inline', md: 'none' }}>
             <Menu>
               <MenuButton
                 as={IconButton}
                 icon={<HamburgerIcon />}
-                variant="outline"
-                aria-label="Options"
+                variant='outline'
+                aria-label='Options'
                 mt={6}
               />
               <MenuList>
-                <NextLink href="/" passHref>
+                <NextLink href='/' passHref>
                   <MenuItem as={Link}>About</MenuItem>
                 </NextLink>
-                <NextLink href="/works" passHref>
+                <NextLink href='/works' passHref>
                   <MenuItem as={Link}>Works</MenuItem>
                 </NextLink>
-                <NextLink href="/posts" passHref>
+                <NextLink href='/posts' passHref>
                   <MenuItem as={Link}>Posts</MenuItem>
                 </NextLink>
               </MenuList>
