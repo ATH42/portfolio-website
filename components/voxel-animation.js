@@ -52,7 +52,7 @@ const VoxelAnimation = () => {
 
       // 640 -> 240
       // 8 -> 6
-      const scale = scH * 0.0005 + 3.8
+      const scale = scH * 0.005 + 5.8
       const camera = new THREE.OrthographicCamera(
         -scale,
         scale,
@@ -73,7 +73,7 @@ const VoxelAnimation = () => {
       controls.target = target
       setControls(controls)
 
-      loadGLTFModel(scene, '/KASA.glb', {
+      loadGLTFModel(scene, '/Landmark.glb', {
         receiveShadow: false,
         castShadow: false
       }).then(() => {
