@@ -56,8 +56,8 @@ const VoxelAnimation = () => {
         scale,
         scale,
         -scale,
-        0.05,
-        50000
+        0.1,
+        2000
       )
       camera.position.copy(initialCameraPosition)
       camera.lookAt(target)
@@ -71,7 +71,7 @@ const VoxelAnimation = () => {
       controls.target = target
       setControls(controls)
 
-      loadGLTFModel(scene, '/Lantern.glb', {
+      loadGLTFModel(scene, '/interstellar.glb', {
         receiveShadow: false,
         castShadow: false
       }).then(() => {
