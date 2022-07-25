@@ -50,15 +50,13 @@ const VoxelAnimation = () => {
       container.appendChild(renderer.domElement)
       setRenderer(renderer)
 
-      // 640 -> 240
-      // 8 -> 6
-      const scale = scH * 0.005 + 5.8
+      const scale = scH * 0.05 + 4.8
       const camera = new THREE.OrthographicCamera(
         -scale,
         scale,
         scale,
         -scale,
-        0.01,
+        0.05,
         50000
       )
       camera.position.copy(initialCameraPosition)
@@ -73,7 +71,7 @@ const VoxelAnimation = () => {
       controls.target = target
       setControls(controls)
 
-      loadGLTFModel(scene, '/Landmark.glb', {
+      loadGLTFModel(scene, '/Lantern.glb', {
         receiveShadow: false,
         castShadow: false
       }).then(() => {
@@ -119,7 +117,7 @@ const VoxelAnimation = () => {
       className='voxel-animation'
       m='auto'
       at={['-20px', '-60px', '-120px']}
-      mb={['-40px', '-140px', '-200px']}
+      mb={['-40px', '-140px', '-420px']}
       w={[280, 480, 640]}
       h={[280, 480, 640]}
       position='relative'
