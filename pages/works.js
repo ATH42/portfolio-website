@@ -4,8 +4,9 @@ import Section from '../components/section'
 import { WorkGridItem } from '../components/grid-items'
 
 import thumbnail from '../public/images/iu.png'
-import wun from '../public/images/wun.png'
+import wun from '../public/images/adaptive-icon.png'
 import poke from '../public/images/poke.png'
+import ypnos from '../public/images/ypnos.png'
 
 const Works = () => {
   return (
@@ -25,13 +26,18 @@ const Works = () => {
           </WorkGridItem>
         </Section>
         <Section>
+          <WorkGridItem id="pokedex" title="Pokedex" thumbnail={poke}>
+            A paginated Pokedex
+          </WorkGridItem>
+        </Section>
+        <Section>
           <WorkGridItem id="wundera" title="Wundera" thumbnail={wun}>
             An app to simplify documentation of chronic wounds.
           </WorkGridItem>
         </Section>
         <Section>
-          <WorkGridItem id="pokedex" title="Pokedex" thumbnail={poke}>
-            A paginated Pokedex
+          <WorkGridItem id="ypnos" title="Ypnos Ceramics" thumbnail={ypnos}>
+            An e-commerce solution for ceramics.
           </WorkGridItem>
         </Section>
       </SimpleGrid>

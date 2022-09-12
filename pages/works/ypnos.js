@@ -6,47 +6,37 @@ import Layout from '../../components/layouts/article'
 
 const Work = () => {
   return (
-    <Layout title="Roundtable Hold">
+    <Layout title="Ypnos Ceramics">
       <Container>
         <Title>
-          Roundtable Hold (Contributor)<Badge>2022</Badge>
+          Ypnos Ceramics<Badge></Badge>
         </Title>
         <P>
-          An easy to use progression Tracker with a holistic approach for all
-          things Elden Ring.
+          A minimalist approach to an e-commerce solution for handmade ceramics.
         </P>
         <List ml={4} my={4}>
           <ListItem>
             <Meta>Website</Meta>
-            <Link href="https://roundtablehold.net">
-              https://roundtablehold.net/ <ExternalLinkIcon mx="2px" />
+            <Link href="https://studioscherben-c97xnl2ho-ath42.vercel.app/">
+              https://studioscherben-c97xnl2ho-ath42.vercel.app/
+              <ExternalLinkIcon mx="2px" />
             </Link>
           </ListItem>
           <ListItem>
             <Meta>Platform</Meta>
-            <span>Web-Application, iOS, Android</span>
+            <span>Web-Application</span>
           </ListItem>
           <ListItem>
             <Meta>Stack</Meta>
-            <span>Python, yaml, Github Pages</span>
+            <span>Hydrogen, React(TS), GraphQL</span>
           </ListItem>
           <ListItem>
             <Meta>Blogpost</Meta>
           </ListItem>
         </List>
-        <WorkImage
-          src="/images/works/roundtable-1.png"
-          alt="elden ring scenery"
-        />
-        <WorkImage
-          my={2}
-          src="/images/works/roundtable-2.png"
-          alt="elden ring scenery"
-        />
-        <WorkImage
-          src="/images/works/roundtable-3.png"
-          alt="elden ring scenery"
-        />
+        <WorkImage src="/images/works/ypnos-1.png" alt="ceramics" />
+        <WorkImage src="/images/works/ypnos-2.png" alt="ceramics" />
+        <WorkImage src="/images/works/ypnos-3.png" alt="ceramics" />
       </Container>
     </Layout>
   )
