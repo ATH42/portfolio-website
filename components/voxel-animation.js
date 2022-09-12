@@ -102,7 +102,7 @@ const VoxelAnimation = () => {
         renderer.dispose()
       }
     }
-  }, [])
+  }, [initialCameraPosition, target, renderer, scene])
 
   useEffect(() => {
     window.addEventListener('resize', handleWindowResize, false)
