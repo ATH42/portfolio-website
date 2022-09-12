@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import { Image } from '@chakra-ui/react'
-import { Text,  useColorModeValue, Flex } from '@chakra-ui/react'
+import { Text, useColorModeValue, Flex } from '@chakra-ui/react'
 import styled from '@emotion/styled'
 
 const LogoBox = styled.span`
@@ -21,27 +21,29 @@ const Logo = () => {
   const flask = `/images/solaire.png`
 
   return (
-    <Link href='/'>
+    <Link href="/">
       <a>
         <LogoBox>
           <Flex>
             <Image
               w={10}
-              borderColor='whiteAlpha.800'
+              borderColor="whiteAlpha.800"
               borderWidth={2}
-              alt='dings'
-              borderStyle='solid'
-              borderRadius='full'
+              alt="dings"
+              borderStyle="solid"
+              borderRadius="full"
               src={flask}
             />
             <Text
               color={useColorModeValue('gray.800', 'whiteAlpha.900')}
-              fontFamily='M PLUS Rounded 1c'
-              fontWeight='bold'
+              fontFamily="M PLUS Rounded 1c"
+              fontWeight="bold"
               ml={3}
-              alignSelf='center'
+              mr={6}
+              alignSelf="center"
+              letterSpacing="wider"
             >
-              Alexander Theofilos Hoffmann
+              A T H
             </Text>
           </Flex>
         </LogoBox>

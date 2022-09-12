@@ -57,20 +57,19 @@ const Navbar = ({ props }) => {
           <Heading as="h1" size="lg" letterSpacing={`tighter`}>
             <Logo />
           </Heading>
+          <Stack
+            direction={{ base: 'column', md: 'row' }}
+            display={{ base: 'none', md: 'flex' }}
+            width={{ base: 'full, md: auto' }}
+            alignItems="center"
+            flexGrow={1}
+            mt={{ base: 4, md: 0 }}
+          >
+            {/* TODO add paths */}
+            <LinkItem href="/about">About</LinkItem>
+            <LinkItem href="/works">Works</LinkItem>
+          </Stack>
         </Flex>
-        <Stack
-          direction={{ base: 'column', md: 'row' }}
-          display={{ base: 'none', md: 'flex' }}
-          width={{ base: 'full, md: auto' }}
-          alignItems="center"
-          flexGrow={1}
-          mt={{ base: 4, md: 0 }}
-        >
-          {/* TODO add paths */}
-          <LinkItem href="/about">About</LinkItem>
-          <LinkItem href="/works">Works</LinkItem>
-        </Stack>
-
         <Box flex={1} align="right">
           <ThemeToggle />
           <Box ml={2} display={{ base: 'inline', md: 'none' }}>

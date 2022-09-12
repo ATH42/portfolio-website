@@ -1,23 +1,26 @@
 import Head from 'next/head'
 import { Box, Container } from '@chakra-ui/react'
-import NoSsr from '../no-ssr'
 import Navbar from '../navbar.js'
-import VoxelAnimation from '../voxel-animation'
+import dynamic from 'next/dynamic'
+import VoxelDogLoader from '../voxelLoader'
+const LazyVoxelDog = dynamic(() => import('../voxel-animation'), {
+  ssr: false,
+  loading: () => <VoxelDogLoader />
+})
 
 const Main = ({ children, router }) => {
   return (
-    <Box as='main'>
+    <Box as="main">
       <Head>
-        <meta name='viewport' content='width=device-width, initial-scale=1' />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>Alexander Theofilos Hoffmann - Homepage</title>
       </Head>
 
       <Navbar path={router.asPath} />
 
-      <Container maxW='container.md'>
-        <NoSsr>
-          <VoxelAnimation />
-        </NoSsr>
+      <Container maxW="container.md">
+        <LazyVoxelDog />
+
         {children}
       </Container>
     </Box>
