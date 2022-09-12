@@ -114,22 +114,22 @@ const VoxelAnimation = () => {
   return (
     <Box
       ref={refContainer}
-      className='voxel-animation'
-      m='auto'
+      className="voxel-animation"
+      m="auto"
       at={['-20px', '-60px', '-120px']}
-      mb={['-40px', '-140px', '-420px']}
+      mb={['-40px', '-140px', '-320px']}
       w={[280, 480, 640]}
       h={[280, 480, 640]}
-      position='relative'
+      position="relative"
     >
       {loading && (
         <Spinner
-          size='xl'
-          position='absolute'
-          left='50%'
-          top='50%'
-          ml='calc(0px - var(--spinner-size) / 2)'
-          mt='calc(0px - var(--spinner-size))'
+          size="xl"
+          position="absolute"
+          left="50%"
+          top="50%"
+          ml="calc(0px - var(--spinner-size) / 2)"
+          mt="calc(0px - var(--spinner-size))"
         />
       )}
     </Box>

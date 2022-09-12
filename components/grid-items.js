@@ -5,16 +5,16 @@ import { Global } from '@emotion/react'
 
 export const GridItem = ({ children, href, title, thumbnail }) => {
   return (
-    <Box w='100%' align='center'>
-      <LinkBox cursor='pointer'>
+    <Box w="100%" align="center">
+      <LinkBox cursor="pointer">
         <Image
           src={thumbnail}
           alt={title}
-          className='grid-item-thumbnail'
-          placeholder='blur'
-          loading='lazy'
+          className="grid-item-thumbnail"
+          placeholder="blur"
+          loading="lazy"
         />
-        <LinkOverlay href={href} target='_blank'>
+        <LinkOverlay href={href} target="_blank">
           <Text mt={2}>{title}</Text>
         </LinkOverlay>
         <Text frontSize={14}>{children}</Text>
@@ -25,14 +25,14 @@ export const GridItem = ({ children, href, title, thumbnail }) => {
 
 export const WorkGridItem = ({ children, id, title, thumbnail }) => {
   return (
-    <Box w='100%' align='center'>
-      <NextLink href={`/works/${id}`}>
-        <LinkBox cursor='pointer'>
+    <Box w="100%" align="center">
+      <NextLink href={`/works/${id}`} passHref scroll={false}>
+        <LinkBox cursor="pointer">
           <Image
             src={thumbnail}
             alt={title}
-            className='grid-item-thumbnail'
-            placeholder='blur'
+            className="grid-item-thumbnail"
+            placeholder="blur"
             style={{ borderRadius: '5%' }}
           />
           <LinkOverlay href={`/works/${id}`}>
