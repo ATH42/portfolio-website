@@ -1,7 +1,11 @@
 import React from 'react'
-
+import { Box, Image, Text } from '@chakra-ui/react'
 const About = () => {
-  return <>Hey, I&apos;m Alex</>
+  return (
+    <Box>
+      <Image w="full" borderRadius="lg" src="/images/1.jpeg" />
+    </Box>
+  )
 }
 
 export default About
