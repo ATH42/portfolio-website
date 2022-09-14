@@ -11,7 +11,8 @@ export const VoxelSpinner = () => (
     mt="calc(0px - var(--spinner-size))"
   />
 )
-
+// eslint-disable-next-line no-alert
+// eslint-disable-next-line react/display-name
 export const VoxelContainer = forwardRef(({ children }, ref) => (
   <Box
     ref={ref}
