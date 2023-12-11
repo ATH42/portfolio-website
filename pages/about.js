@@ -3,12 +3,12 @@ import { Box, Image, Text } from '@chakra-ui/react'
 const About = () => {
   return (
     <Box>
-      <Image w="full" borderRadius="lg" src="/images/io-alex.png" />
+      <Image w="full" borderRadius="lg" src="/images/io-alex.png" alt="ath" />
 
       <Text paddingY={10} paddingX={10}>
         Alexander Theofilos Hoffmann, or ATH for short, embodies a dynamic
         fusion of backgrounds, transitioning from a successful career as a chef
-        to a thriving role in software engineering. ATH's interests are as
+        to a thriving role in software engineering. ATH&apos;s interests are as
         varied as they are passionate: from collecting comics and tabletop game
         figurines to immersing in D&D adventures, exploring nature through
         biking, hiking, and camping. An advocate for outdoor bliss, ATH
