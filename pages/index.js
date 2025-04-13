@@ -85,8 +85,8 @@ const Home = () => {
           <Divider w={10} m={2} />
           <BioSection>
             <BioYear>1988</BioYear>
-            Born in a charming rural town in Niedersachsen, Germany, Alexander's
-            early life was rooted in a close-knit community.
+            Born in a charming rural town in Niedersachsen, Germany,
+            Alexander&apos;s early life was rooted in a close-knit community.
           </BioSection>
           <BioSection>
             <BioYear>2009</BioYear>
