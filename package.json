@@ -11,6 +11,9 @@
   },
   "keywords": [],
   "author": "Alexander Theofilos Hoffmann",
+  "engines": {
+    "node": "18.x"
+  },
   "license": "MIT",
   "dependencies": {
     "@chakra-ui/icons": "^2.0.4",

@@ -9,7 +9,7 @@ const About = () => {
         transform="translate(-0%, -280%)"
         fontSize="3xl"
         fontWeight="bold"
-        color="blue.300"
+        color="orange.300"
         p={4}
         textAlign="center"
         textDecor={'blink'}
