@@ -42,23 +42,24 @@ const VoxelAnimation = () => {
       refRenderer.current = renderer
       const scene = new THREE.Scene()
 
-      const target = new THREE.Vector3(-0.5, 1.2, 0)
+      const target = new THREE.Vector3(0, 1, 0)
       const initialCameraPosition = new THREE.Vector3(
-        20 * Math.sin(0.2 * Math.PI),
-        10,
-        20 * Math.cos(0.2 * Math.PI)
+        10 * Math.sin(0.2 * Math.PI),
+        0,
+        100 * Math.cos(0.2 * Math.PI)
       )
 
       // 640 -> 240
       // 8   -> 6
-      const scale = scH * 0.1 + 4.8
+      const scale = scH * 0.00002 + 1.8
+
       const camera = new THREE.OrthographicCamera(
         -scale,
         scale,
         scale,
         -scale,
-        0.01,
-        50000
+        1,
+        5000
       )
       camera.position.copy(initialCameraPosition)
       camera.lookAt(target)
@@ -70,7 +71,7 @@ const VoxelAnimation = () => {
       controls.autoRotate = true
       controls.target = target
 
-      loadGLTFModel(scene, '/interstellar.glb', {
+      loadGLTFModel(scene, '/vortex.glb', {
         receiveShadow: false,
         castShadow: false
       }).then(() => {
